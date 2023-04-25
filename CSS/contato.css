@@ -68,8 +68,23 @@ a:hover{
 
 .submit{
     margin: 20px 10px;
-    display: block;
+    width: 22em;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
 }
+
+.submit:hover{
+    background: darkorange;
+    transform: scale(1.2);
+}
+
 .backgroundFooter{
     background-image:url(/assets/bg.jpg);
     display: flex;
