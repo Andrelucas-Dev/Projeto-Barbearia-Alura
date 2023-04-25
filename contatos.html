@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="/CSS/contato.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,700;1,400&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="menuPrincipal">
+        <div class="header">
+            <img src="/assets/logo.png" class="logo-header">
+            <ul class="Nav">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/produtos.html">Produtos</a></li>
+                <li><a href="/contatos.html">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section>
+        <div class="formContainer">
+            <form>
+                <p class="tituloInput">Nome e Sobrenome</p>
+                <input type="text" placeholder="Digite seu nome" class="input">
+
+                <p class="tituloInput">Email</p>
+                <input type="email"  placeholder="Digite seu email" class="input">
+
+                <p class="tituloInput">Telefone</p>
+                <input type="number"  placeholder="Digite seu telefone" class="input">
+
+                <p class="tituloInput">Mensagem</p>
+                <textarea class="mensagem">
+
+                </textarea>
+
+                <p class="tituloInput">Como prefere o nosso contato?</p>
+                <label for="contato" class="labelForm">
+                <input type="radio" name="contato"  value="email">
+                    Email
+                </label>
+
+                <label for="contato" class="labelForm">
+                    <input type="radio" name="contato"  value="telefone">
+                        Telefone
+                </label>
+
+                <label for="contato" class="labelForm">
+                    <input type="radio" name="contato"  value="WhatsApp">
+                        WhatsApp
+                </label>
+
+                <p class="tituloInput">Qual horário prefere ser atendido?</p>
+                <label for="times"></label>
+                <select id="times" name="times" aria-placeholder="Manhã">
+                    <option value="Manhã" selected>Manhã</option>
+                    <option value="Tarde">Tarde</option>
+                    <option value="Noite">Noite</option>
+                </select>
+                
+                <p class="tituloInput">Gostaria de receber nossas novidades por e-mail?</p>
+                <label for="novidades" class="tituloInput">
+                <input type="checkbox" id="novidades" name="novidades[]" value="novidades" >
+                Gostaria de receber nossas novidades por e-mail?
+                </label>
+
+                <button type="submit" class="submit">Enviar Formulário</button>
+
+
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer-pai">
+        <div class="backgroundFooter">
+        <img src="/assets/logo-branco.png" class="footerImage">
+        <p class="copy">&copy; Barbearia Alura</p>
+        </div>
+    </footer>
+</body>
+</html>
